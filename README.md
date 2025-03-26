@@ -1,9 +1,31 @@
-# Rebase Foundation Utilities
+# Rebase Foundation | Blockchain Knowledge Hub
 
-This repository contains tools and examples for exploring decentralized finance (DeFi) concepts, inspired by Rebase Foundation(https://rebase.foundation). It’s designed for developers, traders, and blockchain enthusiasts who want to learn more about liquidity, trading, and DeFi protocols.
+## About This Repository
 
-## Purpose
-Here, you’ll find practical utilities to better understand DeFi ecosystems. For more in-depth resources, check out Rebase Foundation(https://rebase.foundation).
+This repository serves as a knowledge hub for blockchain technology resources, focusing on DeFi protocols, cross-chain solutions, and decentralized finance infrastructure. The content here complements the educational materials available on [Rebase Foundation](https://rebase.foundation/) - your comprehensive guide to blockchain ecosystems.
 
-## Example: Liquidity Calculator
-This is a simple Python script to estimate returns for liquidity providers in a DeFi pool.
+## Featured Projects
+
+### THORChain
+Advanced cross-chain liquidity protocol enabling decentralized token swaps across blockchains.
+
+### tBTC
+Decentralized, BTC-backed token on Ethereum, facilitating Bitcoin usage in DeFi applications.
+
+## Educational Resources
+
+This repository contains supplementary materials to the comprehensive guides available on our main platform. For in-depth analysis, tutorials, and blockchain education, visit our main site:
+
+[<img src="[https://your-logo-url-here.png](https://rebase.foundation/wp-content/uploads/2025/02/rebase-logo-without-bg.svg)" alt="Rebase Foundation" width="200"/>](https://rebase.foundation/)
+
+## Contribution Guidelines
+
+We welcome contributions from blockchain enthusiasts and developers. Please read our contribution guidelines before submitting pull requests.
+
+## License
+
+This repository is licensed under [appropriate license]. See LICENSE file for details.
+
+---
+
+Developed and maintained by the [Rebase Foundation](https://rebase.foundation/) team - Building blockchain knowledge for everyone.
