@@ -2,7 +2,7 @@
 
 ## About This Repository
 
-This repository serves as a knowledge hub for blockchain technology resources, focusing on DeFi protocols, cross-chain solutions, and decentralized finance infrastructure. The content here complements the educational materials available on [Rebase Foundation](https://rebase.foundation/) - your comprehensive guide to blockchain ecosystems.
+This repository serves as a knowledge hub for blockchain technology resources, focusing on DeFi protocols, cross-chain solutions, and decentralized finance infrastructure. The content here complements the educational materials available on https://rebase.foundation - your comprehensive guide to blockchain ecosystems.
 
 ## Featured Projects
 
