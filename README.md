@@ -16,7 +16,7 @@ Decentralized, BTC-backed token on Ethereum, facilitating Bitcoin usage in DeFi 
 
 This repository contains supplementary materials to the comprehensive guides available on our main platform. For in-depth analysis, tutorials, and blockchain education, visit our main site:
 
-[<img src="[https://your-logo-url-here.png](https://rebase.foundation/wp-content/uploads/2025/02/rebase-logo-without-bg.svg)" alt="Rebase Foundation" width="200"/>](https://rebase.foundation/)
+[<img src="https://rebase.foundation/wp-content/uploads/2025/02/rebase-logo-without-bg.svg" alt="Rebase Foundation" width="200"/>](https://rebase.foundation/)
 
 ## Contribution Guidelines
 
