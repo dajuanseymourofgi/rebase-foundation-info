@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Investment Calculator | Rebase Foundation</title>
+    <meta name="description" content="Calculate potential returns on cryptocurrency investments, THORChain liquidity provision, and tBTC yields with Rebase Foundation's blockchain calculator.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blockchain Investment Calculator | Rebase Foundation">
+    <meta property="og:description" content="Calculate potential returns on cryptocurrency investments with our free blockchain calculator.">
+    <meta property="og:url" content="https://yourusername.github.io/rebase-foundation-resources/calculator.html">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/logo-placeholder.png" alt="Rebase Foundation Logo" class="logo">
+            <h1>Blockchain Investment Calculator</h1>
+            <p class="tagline">Estimate returns for various blockchain investment strategies</p>
+            <a href="https://rebase.foundation/" class="main-link">Visit Rebase Foundation →</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="calculator-section">
+            <div class="calculator-container">
+                <div class="calculator-tabs">
+                    <button class="tab-button active" data-tab="liquidity">THORChain Liquidity</button>
+                    <button class="tab-button" data-tab="staking">tBTC Staking</button>
+                    <button class="tab-button" data-tab="compound">Compound Interest</button>
+                </div>
+                
+                <div class="calculator-content">
+                    <!-- THORChain Liquidity Calculator -->
+                    <div class="tab-content active" id="liquidity-tab">
+                        <h2>THORChain Liquidity Provision Calculator</h2>
+                        <p>Estimate your potential returns from providing liquidity to THORChain pools.</p>
+                        
+                        <div class="form-group">
+                            <label for="liquidity-amount">Initial Investment (USD)</label>
+                            <input type="number" id="liquidity-amount" min="1" value="1000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="liquidity-apr">Expected APR (%)</label>
+                            <input type="number" id="liquidity-apr" min="1" max="500" value="20">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="liquidity-period">Time Period (Days)</label>
+                            <input type="number" id="liquidity-period" min="1" max="3650" value="365">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="liquidity-fee">Average Swap Fee (%)</label>
+                            <input type="number" id="liquidity-fee" min="0" max="10" step="0.01" value="0.3">
+                        </div>
+                        
+                        <button id="calculate-liquidity" class="calculate-button">Calculate Returns</button>
+                        
+                        <div class="results" id="liquidity-results">
+                            <h3>Estimated Returns</h3>
+                            <div class="result-item">
+                                <span>Total Value:</span>
+                                <span id="liquidity-total">$0.00</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Total Profit:</span>
+                                <span id="liquidity-profit">$0.00</span>
+                            </div>
+                            <div class="result-item">
+                                <span>ROI:</span>
+                                <span id="liquidity-roi">0.00%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- tBTC Staking Calculator -->
+                    <div class="tab-content" id="staking-tab">
+                        <h2>tBTC Staking Calculator</h2>
+                        <p>Estimate your potential returns from staking tBTC.</p>
+                        
+                        <div class="form-group">
+                            <label for="staking-amount">BTC Amount</label>
+                            <input type="number" id="staking-amount" min="0.001" step="0.001" value="1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="staking-apr">Expected APR (%)</label>
+                            <input type="number" id="staking-apr" min="1" max="30" value="5">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="staking-period">Staking Period (Days)</label>
+                            <input type="number" id="staking-period" min="1" max="3650" value="365">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="btc-price">Current BTC Price (USD)</label>
+                            <input type="number" id="btc-price" min="1" value="65000">
+                        </div>
+                        
+                        <button id="calculate-staking" class="calculate-button">Calculate Returns</button>
+                        
+                        <div class="results" id="staking-results">
+                            <h3>Estimated Returns</h3>
+                            <div class="result-item">
+                                <span>BTC After Period:</span>
+                                <span id="staking-total-btc">0.00 BTC</span>
+                            </div>
+                            <div class="result-item">
+                                <span>USD Value:</span>
+                                <span id="staking-total-usd">$0.00</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Profit:</span>
+                                <span id="staking-profit">$0.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Compound Interest Calculator -->
+                    <div class="tab-content" id="compound-tab">
+                        <h2>Compound Interest Calculator</h2>
+                        <p>Calculate how your cryptocurrency investments grow over time with compound interest.</p>
+                        
+                        <div class="form-group">
+                            <label for="compound-principal">Initial Investment (USD)</label>
+                            <input type="number" id="compound-principal" min="1" value="1000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="compound-rate">Annual Interest Rate (%)</label>
+                            <input type="number" id="compound-rate" min="0.1" max="200" step="0.1" value="10">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="compound-time">Investment Period (Years)</label>
+                            <input type="number" id="compound-time" min="1" max="30" value="5">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="compound-frequency">Compounding Frequency</label>
+                            <select id="compound-frequency">
+                                <option value="1">Annually</option>
+                                <option value="4">Quarterly</option>
+                                <option value="12" selected>Monthly</option>
+                                <option value="365">Daily</option>
+                            </select>
+                        </div>
+                        
+                        <button id="calculate-compound" class="calculate-button">Calculate Returns</button>
+                        
+                        <div class="results" id="compound-results">
+                            <h3>Estimated Returns</h3>
+                            <div class="result-item">
+                                <span>Future Value:</span>
+                                <span id="compound-future">$0.00</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Total Interest Earned:</span>
+                                <span id="compound-interest">$0.00</span>
+                            </div>
+                            <div class="result-item">
+                                <span>Total Growth:</span>
+                                <span id="compound-growth">0.00%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calculator-info">
+                <h3>About Our Calculators</h3>
+                <p>These calculators are provided as educational tools to help you understand potential returns from various blockchain investment strategies. Actual results may vary based on market conditions, network performance, and other factors.</p>
+                <p>For more detailed information about THORChain, tBTC, and other blockchain investments, visit our comprehensive guides:</p>
+                <ul>
+                    <li><a href="https://rebase.foundation/thorchain/">THORChain Guide</a></li>
+                    <li><a href="https://rebase.foundation/tbtc/">tBTC Guide</a></li>
+                    <li><a href="https://rebase.foundation/exness-crypto-trading/">Crypto Trading Guide</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="related-content">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>THORChain Liquidity Providing</h3>
+                    <p>Learn how to become a THORChain liquidity provider and earn yield on your crypto assets.</p>
+                    <a href="https://rebase.foundation/thorchain/providing-liquidity/">Learn More →</a>
+                </div>
+                <div class="resource-card">
+                    <h3>tBTC Deep Dive</h3>
+                    <p>Explore how tBTC works and its role in bringing Bitcoin to Ethereum's DeFi ecosystem.</p>
+                    <a href="https://rebase.foundation/tbtc/deep-dive/">Read Guide →</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Crypto Trading Fundamentals</h3>
+                    <p>Master the basics of cryptocurrency trading with our comprehensive guide.</p>
+                    <a href="https://rebase.foundation/exness-crypto-trading/">Read Guide →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Rebase Foundation. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="https://rebase.foundation/about/">About Us</a>
+                <a href="https://rebase.foundation/">Main Website</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
